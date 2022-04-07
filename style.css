@@ -1,0 +1,145 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap');
+
+/*
+=============== 
+Variables
+===============
+*/
+
+
+
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-2: hsl(205, 77%, 27%);
+  --clr-primary-3: hsl(205, 72%, 37%);
+  --clr-primary-4: hsl(205, 63%, 48%);
+  /* primary/main color */
+  --clr-primary-5: hsl(205, 78%, 60%);
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(205, 89%, 70%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --clr-primary-8: hsl(205, 86%, 81%);
+  --clr-primary-9: hsl(205, 90%, 88%);
+  --clr-primary-10: hsl(206, 58%, 95%);
+ 
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+ 
+  background: var(--clr-primary-10);
+ 
+  height: 100vh;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* height: 100vh; */
+  /* overflow: hidden; */
+  line-height: 1.5;
+  font-size: 0.875rem;
+  transition: all 0.3s linear;
+  color: var(--clr-primary-1);
+}
+
+
+/*  global classes */
+
+/* section */
+
+
+/* --------------------------------project styling ---------------------------- */
+
+
+.dark-mode {
+  /* background */
+  --clr-primary-10: hsl(204, 56%, 13%);
+  /* button and title font */
+  --clr-primary-5: hsl(205, 77%, 68%);
+  /* button font color */
+  --clr-primary-9: hsl(205, 100%, 96%);
+  /* main text color */
+  --clr-primary-1: hsl(205, 69%, 91%);
+}
+
+
+
+.nav-center {
+  width: 90vw;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+.nav-center span {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+.btn {
+  background: var(--clr-primary-5);
+  color: var(--clr-primary-9);
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  border-color: transparent;
+  text-transform: capitalize;
+  transition: all 0.3s linear;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.articles {
+  padding: 5rem 0;
+  width: 90vw;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.post {
+  margin-bottom: 3rem;
+}
+
+.post h2 {
+  color: var(--clr-primary-5);
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-size: 1.75rem;
+}
+.post-info {
+  margin-bottom: 0.75rem;
+  font-style: italic;
+  color: var(--clr-primary-1);
+}
+.post-info span {
+  margin-right: 0.5rem;
+}
+/* ----------------------------end project styling ---------------------------- */
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
